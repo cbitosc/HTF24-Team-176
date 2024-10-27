@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - Smart Recipe Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <!-- Sidebar with Profile, About, and Recipe Search -->
+        <div class="sidebar">
+            <h2>Dashboard</h2>
+            <div class="profile-section">
+                <p><a href="#profile">Profile</a></p>
+                <p><a href="#about">About</a></p>
+            </div>
+            <div class="search-recipe">
+                <input type="text" placeholder="Search recipes by name" id="recipeSearchBar">
+                <button onclick="searchRecipeByName()">Search</button>
+            </div>
+        </div>
+
+        <!-- Main Content Area for Ingredient Search -->
+        <div class="main-content">
+            <h2>Smart Recipe Generator</h2>
+            <div id="ingredientBox">
+                <input type="text" id="ingredients" placeholder="Enter ingredients, separated by commas">
+                <h3>Enter Ingredients:</h3>
+                
+                <button type="submit" class="Find recipe-btn" onclick="window.location.href='recipebook.html'">Find Recipes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
