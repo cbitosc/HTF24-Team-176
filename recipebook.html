@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="recipe-list-container">
+        <!-- Filter Section -->
+        <div class="filter-section">
+            <h2>Filters</h2>
+            <label for="courseFilter">Course</label>
+            <select id="courseFilter" onchange="applyFilters()">
+                <option value="all">All</option>
+                <option value="breakfast">Breakfast</option>
+                <option value="lunch">Lunch</option>
+                <option value="dessert">Dessert</option>
+                <option value="beverage">Beverage</option>
+            </select>
+            
+            <label for="dietFilter">Dietary Preference</label>
+            <select id="dietFilter" onchange="applyFilters()">
+                <option value="all">All</option>
+                <option value="veg">Vegetarian</option>
+                <option value="non-veg">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
+            
+            <label for="cuisineFilter">Cuisine Type</label>
+            <select id="cuisineFilter" onchange="applyFilters()">
+                <option value="all">All</option>
+                <option value="indian">Indian</option>
+                <option value="italian">Italian</option>
+                <option value="chinese">Chinese</option>
+            </select>
+        </div>
+
+        <!-- Recipe List Section -->
+        <div class="recipe-list">
+            <h2>Ingredients</h2>
+            <div id="recipesContainer">
+                <!-- Example recipe card -->
+                <!-- Recipe cards will be dynamically populated here based on ingredient input and filter -->
+            </div>
+        </div>
+        <div class="recipe-card" id="veggie-burrito-card">
+            <h2>Veggie Breakfast Burrito</h2>
+            <img src="veggie-burrito.jpg" alt="Veggie Burrito">
+            <p>A hearty vegetarian breakfast burrito packed with veggies.</p>
+            <a href="recipepage.html?id=veggie-burrito-card">View Recipe</a>
+        </div>
+        <div class="recipe-card" id="chicken-caesar-salad-card">
+            <h2>Chicken Caesar Salad</h2>
+            <img src="chicken-caesar-salad.jpg" alt="Chicken Caesar Salad">
+            <p>A classic chicken Caesar salad with homemade dressing.</p>
+            <a href="recipepage.html?id=chicken-caesar-salad-card">View Recipe</a>
+        </div>
+        
+        <div class="recipe-card" id="vegan-chocolate-cake-card">
+            <h2>Vegan Chocolate Cake</h2>
+            <img src="vegan-chocolate-cake.jpg" alt="Vegan Chocolate Cake">
+            <p>A delicious vegan chocolate cake made with almond milk.</p>
+            <a href="recipepage.html?id=vegan-chocolate-cake-card">View Recipe</a>
+        </div>
+        
+        <div class="recipe-card" id="pasta-primavera-card">
+            <h2>Pasta Primavera</h2>
+            <img src="pasta-primavera.jpg" alt="Pasta Primavera">
+            <p>Italian pasta with fresh spring vegetables.</p>
+            <a href="recipepage.html?id=pasta-primavera-card">View Recipe</a>
+        </div>
+        
+        <div class="recipe-card" id="chinese-vegetable-stir-fry-card">
+            <h2>Chinese Vegetable Stir Fry</h2>
+            <img src="chinese-vegetable-stir-fry.jpg" alt="Chinese Vegetable Stir Fry">
+            <p>A quick stir fry with mixed vegetables and tofu.</p>
+            <a href="recipepage.html?id=chinese-vegetable-stir-fry-card">View Recipe</a>
+        </div>
+        
+    </div>
+
+    <script src="recipebook.js"></script>
+</body>
+</html>
